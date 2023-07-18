@@ -7,5 +7,9 @@
 </head>
 <body>
     <h1>Hello world!</h1>
+    @foreach ($users as $user)
+        <h2>Name: {{$user['name']}}</h2>
+        <h2>Surname: {{$user['surname']}}</h2>
+    @endforeach
 </body>
 </html>
