@@ -24,4 +24,19 @@ Route::get('/', function () {
         ];
 
     return view('home', $data);
-});
+})->name('home');
+
+Route::get('/about-us', function () {
+    $data=[
+        'users'=>[
+                    ['name'=>'Gino',
+                    'surname'=>'Paoli',
+                    'role'=>'CEO'],
+                    ['name'=>'Paolo',
+                    'surname'=>'Rossi',
+                    'role'=>'Co-Founder'],
+                ]
+        ];
+
+    return view('about-us', $data);
+})->name('about-us');

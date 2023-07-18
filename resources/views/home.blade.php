@@ -11,5 +11,10 @@
         <h2>Name: {{$user['name']}}</h2>
         <h2>Surname: {{$user['surname']}}</h2>
     @endforeach
+    <h2>
+        <a href="{{ route('about-us') }}">
+            About us
+        </a>
+    </h2>
 </body>
 </html>
